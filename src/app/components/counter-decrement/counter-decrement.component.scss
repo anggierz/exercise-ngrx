@@ -3,10 +3,12 @@ button {
   color: white;
   border: none;
   padding: 0.75rem 1.5rem;
-  border-radius: 8px;
+  font-size: 1.5rem;
+  border-radius: 10px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 button:hover {
   background-color: #d32f2f;
+  transform: scale(1.05);
 }

@@ -1,8 +1,95 @@
-:host {
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 2rem;
   padding: 2rem;
-  background-color: #f0f4f8;
+  background-color: #f0f2f5;
   min-height: 100vh;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #1a1a1a;
+}
+
+.chart-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.chart-wrapper app-chart-line,
+.chart-wrapper app-chart-bar {
+  width: 100%;
+  max-width: 900px;
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+app-counter-value {
+  background-color: #ffffff;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+}
+
+.button-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+app-counter-increment,
+app-counter-decrement,
+app-counter-reset {
+  display: inline-block;
+}
+
+app-counter-increment button,
+app-counter-decrement button,
+app-counter-reset button {
+  width: 60px;
+  height: 60px;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+app-counter-increment button {
+  background-color: #4caf50;
+}
+app-counter-increment button:hover {
+  background-color: #388e3c;
+  transform: scale(1.05);
+}
+
+app-counter-decrement button {
+  background-color: #f44336;
+}
+app-counter-decrement button:hover {
+  background-color: #d32f2f;
+  transform: scale(1.05);
+}
+
+app-counter-reset button {
+  background-color: #ff9800;
+}
+app-counter-reset button:hover {
+  background-color: #fb8c00;
+  transform: scale(1.05);
 }

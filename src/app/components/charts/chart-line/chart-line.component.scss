@@ -1,9 +1,9 @@
-.chart-container {
+:host {
+  display: block;
   width: 100%;
-  max-width: 700px;
-  background-color: #ffffff;
-  padding: 1rem;
-  margin-top: 1rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+canvas {
+  width: 100% !important;
+  height: auto !important;
 }
