@@ -3,11 +3,12 @@ import { RouterOutlet } from '@angular/router';
 import { CounterValueComponent } from './components/counter-value/counter-value.component';
 import { CounterIncrementComponent } from './components/counter-increment/counter-increment.component';
 import { CounterDecrementComponent } from './components/counter-decrement/counter-decrement.component';
+import { CounterResetComponent } from './components/counter-reset/counter-reset.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, CounterValueComponent, CounterIncrementComponent, CounterDecrementComponent],
+  imports: [RouterOutlet, CounterValueComponent, CounterIncrementComponent, CounterDecrementComponent, CounterResetComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
