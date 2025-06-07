@@ -1,27 +1,96 @@
-# ExerciseNgrx
+# 📊 Exercise NgRX
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.0.
+Aplicación Angular que demuestra el uso de **NgRx** para gestionar el estado global de un contador, junto con la visualización de datos mediante **gráficos de líneas y barras** con Chart.js.
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 🧠 Tecnologías utilizadas
 
-## Code scaffolding
+- [Angular](https://angular.io/)
+- [NgRx Store](https://ngrx.io/guide/store)
+- [Chart.js](https://www.chartjs.org/)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+---
 
-## Build
+## 🚀 Funcionalidad
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- ✅ Visualización de datos en gráfico de líneas y de barras.
+- ✅ Gestión de estado global con NgRx Store.
+- ✅ Contador global con:
+  - Incremento de 5
+  - Decremento de 5
+  - Reset a 0
+- ✅ Visualización en tiempo real del valor del contador.
+- ✅ Estilos atractivos y adaptables a dispositivos móviles.
 
-## Running unit tests
+---
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## ⚠️ Nota sobre `@ngrx/store` y versiones de Angular
 
-## Running end-to-end tests
+Dependiendo de la versión de Angular que estés usando, es posible que el siguiente comando:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```bash
+ng add @ngrx/store
+```
 
-## Further help
+genere un error como:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```
+ERESOLVE unable to resolve dependency tree
+```
+
+Esto ocurre si estás usando una versión de Angular que no es compatible con la versión más reciente de NgRx.
+
+### ✅ Solución recomendada
+
+Instala la versión de NgRx que sea compatible con tu Angular. Por ejemplo, si usas Angular 18 (como es mi caso):
+
+```bash
+ng add @ngrx/store@18
+```
+
+---
+
+## ▶️ Cómo ejecutar el proyecto
+
+1. **Clona este repositorio**:
+   ```bash
+   git clone https://github.com/anggierz/exercise-ngrx.git
+   cd exercise-ngrx
+   ```
+
+2. **Instala las dependencias**:
+   ```bash
+   npm install
+   ```
+
+3. **Ejecuta el servidor de desarrollo**:
+   ```bash
+   ng serve
+   ```
+
+4. **Abre en tu navegador**:
+   ```
+   http://localhost:4200
+   ```
+
+---
+
+## 📁 Estructura del proyecto
+
+```
+src/
+├── app/
+│   ├── components/
+│   │   ├── charts/
+│   │   │   ├── chart-bar/
+│   │   │   └── chart-line/
+│   │   ├── counter-value/
+│   │   ├── counter-increment/
+│   │   ├── counter-decrement/
+│   │   └── counter-reset/
+│   ├── store/
+│   │   ├── counter.actions.ts
+│   │   └── counter.reducer.ts
+│   └── app.component.*
+```
