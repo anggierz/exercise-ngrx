@@ -5,6 +5,7 @@ import { CounterIncrementComponent } from './components/counter-increment/counte
 import { CounterDecrementComponent } from './components/counter-decrement/counter-decrement.component';
 import { CounterResetComponent } from './components/counter-reset/counter-reset.component';
 import { ChartLineComponent } from './components/charts/chart-line/chart-line.component';
+import { ChartBarComponent } from './components/charts/chart-bar/chart-bar.component';
 
 @Component({
   selector: 'app-root',
@@ -14,7 +15,8 @@ import { ChartLineComponent } from './components/charts/chart-line/chart-line.co
     CounterIncrementComponent,
     CounterDecrementComponent,
     CounterResetComponent,
-    ChartLineComponent],
+    ChartLineComponent,
+    ChartBarComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
